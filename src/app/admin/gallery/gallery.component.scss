@@ -11,3 +11,8 @@
     width: 100%;
     bottom: 40%;
 }
+
+.mat-card-image {
+    width: calc(100% + 32px);
+    margin: 0 -16px 16px 16px;
+}

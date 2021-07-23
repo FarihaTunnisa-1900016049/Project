@@ -38,7 +38,7 @@ loadingUpload: boolean;
      console.log(data);
    },error=>{
        this.loadingUpload = false;
-       alert('Gagal mengunggah file');
+       alert('Gagal mengunggah foto');
    });
  }
 
@@ -49,7 +49,7 @@ loadingUpload: boolean;
      //lakukan update data produk disini
      this.updateBook(data);
      //
-     alert('File berhasil diunggah');
+     alert('Foto berhasil diunggah');
      this.loadingUpload = false;
      this.dialogRef.close();
    }else{

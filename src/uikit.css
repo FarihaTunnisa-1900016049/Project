@@ -161,9 +161,10 @@ canvas,
 img,
 video {
   /* 1 */
-  max-width: 100%;
+  max-width: 20%;
+ 
   /* 2 */
-  height: auto;
+  height: 250px;
   /* 3 */
   box-sizing: border-box;
 }
