@@ -1,4 +1,8 @@
-<div *ngIf="loading" style="height: 300px;" class="uk-flex uk-flex-center uk-flex-middle">
+<mat-toolbar style="background-color: peru">
+    <h2>DATA DIRI</h2>
+</mat-toolbar>
+
+<div *ngIf="loading" style="height: 300px;" class="uk-flex uk-flex-center uk-flex-middle" style="background-color:tan">
     <mat-spinner></mat-spinner>
 </div>
 
@@ -9,7 +13,7 @@
     <mat-card-content>
         <div class="uk-flex">
             <span class="uk-width-expand"></span>
-            <button mat-flat-button color="warn" (click)="productDetail({},-1)">Tambah Data</button>
+            <button mat-raised-button color="peru" (click)="productDetail({},-1)">Tambah Data</button>
         </div>
  
         <table class="uk-table uk-table-middle uk-table-divider">
@@ -40,9 +44,9 @@
                     <td>{{book.isbn}}</td>
                     <td>{{book.price}}</td>
                     <td align="right"> 
-                        <button mat-button color="primary" (click)="uploadFile(book)">Upload</button>
-                        <button mat-button color="primary" (click)="productDetail(book,idx)">Edit</button>
-                        <button mat-button color="warn" (click)="deleteProduct(book.id,idx)" [disabled]="loadingDelete[idx]">Delete</button>
+                        <button mat-button color="snow" (click)="uploadFile(book)">Upload</button>
+                        <button mat-button color="snow" (click)="productDetail(book,idx)">Edit</button>
+                        <button mat-button color="snow" (click)="deleteProduct(book.id,idx)" [disabled]="loadingDelete[idx]">Delete</button>
                     </td>
                 </tr>
             </tbody>
