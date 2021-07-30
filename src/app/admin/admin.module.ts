@@ -11,6 +11,7 @@ import { ProductComponent } from './product/product.component';
 import { ProductDetailComponent } from './product-detail/product-detail.component';
 import { FormsModule } from '@angular/forms';
 import { FileUploaderComponent } from './file-uploader/file-uploader.component'; 
+import { HomeComponent } from '../public/home/home.component';
 
 const routes: Routes = [
   {
@@ -34,9 +35,18 @@ const routes: Routes = [
         component: ImagesComponent
       },
       {
+        path: 'home',
+        component: HomeComponent
+      },
+      {
         path: '',
         pathMatch: 'full',
         redirectTo: '/admin/dashboard'
+      },
+      {
+        path: '',
+        pathMatch: 'full',
+        redirectTo: '/public/home'
       }
     ]
   },
