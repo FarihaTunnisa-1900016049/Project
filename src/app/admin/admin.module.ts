@@ -12,6 +12,7 @@ import { ProductDetailComponent } from './product-detail/product-detail.componen
 import { FormsModule } from '@angular/forms';
 import { FileUploaderComponent } from './file-uploader/file-uploader.component'; 
 import { HomeComponent } from '../public/home/home.component';
+import { PerpusComponent } from './perpus/perpus.component';
 
 const routes: Routes = [
   {
@@ -39,6 +40,10 @@ const routes: Routes = [
         component: HomeComponent
       },
       {
+        path: 'perpus',
+        component: PerpusComponent
+      },
+      {
         path: '',
         pathMatch: 'full',
         redirectTo: '/admin/dashboard'
@@ -61,7 +66,8 @@ const routes: Routes = [
     ImagesComponent,
     ProductComponent,
     ProductDetailComponent,
-    FileUploaderComponent
+    FileUploaderComponent,
+    PerpusComponent
   ],
   entryComponents:[
     ImagesComponent
